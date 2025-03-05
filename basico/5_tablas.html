@@ -1,0 +1,80 @@
+<!DOCTYPE HTML> <!-- Establece la version mas reciente de HTML-->
+<html lang="es">
+<!-- Abrimos la etiqueta html ya que dentro de esta ira toda nuestra pagina html, Agregamos un atributo 'lang' el cual se usa para definir el lenguaje de la pagiona -->
+
+<head>
+    <!-- Inicio de la cabecera de la pagina en la cual se colocaran metadatos, nada d elo que haya qui se mostrara en la pagina -->
+    <title>Mi primera página web</title> <!-- Agregamos un titulo para identificar la pagina -->
+</head> <!-- Fin de la cabecera de la pagina -->
+
+<body> <!-- Inicio del cuerpo de la pagina -->
+    <h1>Tablas en HTML</h1> <!-- encabezado de primer nivel -->
+
+    <p>Pra poder usar las tablas en Html necesitaremos las <strong>etiquetas</strong> <br/> 
+        <ul>
+            <li><strong>table:</strong> Esta etiqueta abre la tabla</li>
+            <li><strong>tr:</strong> Esta etiqueta abre una fila en la tabla</li>
+            <li><strong>td:</strong> Esta etiqueta abre una columna (celda) en la fila</li>
+            <li><strong>th:</strong> Esta etiqueta abre una columna (celda) de tipo cabecera en la fila</li>
+            <li><strong>caption:</strong> Esta etiqueta abre la cabecera de la tabla</li>
+            <li><strong>tfoot:</strong> Esta etiqueta abre la pie de la tabla</li>
+            <li><strong>thead:</strong> Esta etiqueta abre la cabeza de la tabla</li>
+        </ul>
+        <hr/>
+    <h2>Ejemplo tabla (Sin diseno)</h2>
+    <table> <!-- Abrimos la tabla -->
+        <caption>Mi tabla de nombres</caption><!-- Titulo de la tabla -->
+        <thead> <!-- Indicamos apertura de una fila de encabezados -->
+            <tr><!-- Abrimos la primer fila para la tabla -->
+                <th>Nombres</th> <!-- Indicamos el nombre o cabezera que llevara la primer columna -->
+                <th>Apellido Paterno</th> <!-- Indicamos el nombre o cabezera que llevara la segunda columna -->
+                <th>Apellido Materno</th> <!-- Indicamos el nombre o cabezera que llevara la tercer columna -->
+            </tr><!-- Cerramos la primer fila para los titulos -->
+            <tr><!-- Abrimos la segunda fila o renglon -->
+                <td>Jorge Adrian</td> <!-- Indicamos el contenido que llevara la primer columna de la segunda fila -->
+                <td>Gracia</td> <!-- Indicamos el contenido que llevara la segunda columna de la segunda fila -->
+                <td>Marinez</td> <!-- Indicamos el contenido que llevara la tercer columna de la segunda fila -->
+            </tr><!-- Cerramos la segunda fila o renglon -->
+            <tr><!-- Abrimos la tercer fila o renglon -->
+                <td>Harumi Samira</td> <!-- Indicamos el contenido que llevara la primer columna de la segunda fila -->
+                <td>Sanchez</td> <!-- Indicamos el contenido que llevara la segunda columna de la segunda fila -->
+                <td>Teniente</td> <!-- Indicamos el contenido que llevara la tercer columna de la segunda fila -->
+            </tr><!-- Cerramos la tercer fila o renglon -->
+        </thead><!-- Indicamos cierre de una fila de encabezados -->
+    </table><!-- Cerramos la tabla -->
+    <hr/>
+    <p>Para poder ver el desieno de la tabla necesitaremos usar de los <strong>atributos</strong> de la etiqueta de la tabla los cuales son los siguientes<br/>
+        <ul>
+            <li><strong>border:</strong> Este atributo establece el ancho de las lineas que se van a poner en las celdas</li>
+            <li><strong>colspan:</strong> define el tamaño de la coluna (Celdas)</li>
+            <li><strong>cellpadding:</strong> Este atributo establece el espacio entre las celdas y las lineas</li>
+            <li><strong>cellspacing:</strong> Este atributo establece el espacio entre las celdas</li>
+            <li><strong>width:</strong> Este atributo establece el ancho de la tabla</li>
+            <li><strong>height:</strong> Este atributo establece el alto de la tabla</li>
+            <li><strong>align:</strong> Este atributo establece el alineamiento de la tabla en la pantalla</li>
+        </ul>
+        <hr/>
+        <h2>Ejemplo tabla (Con diseno)</h2>
+        <table border="1"> <!-- Abrimos la tabla -->
+            <caption>Mi tabla de nombres</caption><!-- Titulo de la tabla -->
+            <thead> <!-- Indicamos apertura de una fila de encabezados -->
+                <tr><!-- Abrimos la primer fila para la tabla -->
+                    <th>Nombres</th> <!-- Indicamos el nombre o cabezera que llevara la primer columna -->
+                    <th>Apellido Paterno</th> <!-- Indicamos el nombre o cabezera que llevara la segunda columna -->
+                    <th>Apellido Materno</th> <!-- Indicamos el nombre o cabezera que llevara la tercer columna -->
+                </tr><!-- Cerramos la primer fila para los titulos -->
+                <tr><!-- Abrimos la segunda fila o renglon -->
+                    <td>Jorge Adrian</td> <!-- Indicamos el contenido que llevara la primer columna de la segunda fila -->
+                    <td>Gracia</td> <!-- Indicamos el contenido que llevara la segunda columna de la segunda fila -->
+                    <td>Marinez</td> <!-- Indicamos el contenido que llevara la tercer columna de la segunda fila -->
+                </tr><!-- Cerramos la segunda fila o renglon -->
+                <tr><!-- Abrimos la tercer fila o renglon -->
+                    <td>Harumi Samira</td> <!-- Indicamos el contenido que llevara la primer columna de la segunda fila -->
+                    <td>Sanchez</td> <!-- Indicamos el contenido que llevara la segunda columna de la segunda fila -->
+                    <td>Teniente</td> <!-- Indicamos el contenido que llevara la tercer columna de la segunda fila -->
+                </tr><!-- Cerramos la tercer fila o renglon -->
+            </thead><!-- Indicamos cierre de una fila de encabezados -->
+        </table><!-- Cerramos la tabla -->
+</body> <!-- Fin del cuerpo de la pagina -->
+
+</html><!-- Cerramos la etiqueta html -->

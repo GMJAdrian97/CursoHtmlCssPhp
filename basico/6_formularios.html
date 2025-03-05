@@ -1,0 +1,77 @@
+<!DOCTYPE HTML> <!-- Establece la version mas reciente de HTML-->
+<html lang="es">
+<!-- Abrimos la etiqueta html ya que dentro de esta ira toda nuestra pagina html, Agregamos un atributo 'lang' el cual se usa para definir el lenguaje de la pagiona -->
+
+<head>
+    <!-- Inicio de la cabecera de la pagina en la cual se colocaran metadatos, nada d elo que haya qui se mostrara en la pagina -->
+    <title>Mi primera página web</title> <!-- Agregamos un titulo para identificar la pagina -->
+</head> <!-- Fin de la cabecera de la pagina -->
+
+<body> <!-- Inicio del cuerpo de la pagina -->
+    <h1>Formularios en HTML</h1> <!-- encabezado de primer nivel -->
+
+    <p>Los furmularoips en html son muy importantes ya que estos se encargarn de <strong>enviar texto, informacion al servidor o cualquier cosa</strong> <br/> 
+    <p>Para usar un formulario en html necesitamos la <strong>etiqueta form</strong> <br/>    
+    <p>Como sabemos los formularios tiene <strong>campos</strong> y estos se usan mediante las siguientes etiquetas que son las mas cumunes dentro de un formlario</p><br/>    
+    <ul>
+        <li><strong>input:</strong> Este es el elemento principal para crear campos de entrada, este campo tiene atributos importantes tales como</li>
+        <ul>
+            <li><strong>type:</strong> Este es el tipo de campo de entrada que deseamos crear (text, number, passwors, etc)</li>
+            <li><strong>name:</strong> Este es el nombre que identifica el campo de entrada</li>
+            <li><strong>value:</strong> Este es el valor que se muestra en el campo de entrada</li>
+            <li><strong>placeholder:</strong> Este es el texto que se muestra en el campo de entrada cuando este esta vacio</li>
+            <li><strong>required:</strong> Este es un atributo que indica que el campo es obligatorio</li>
+            <li><strong>disabled:</strong> Este es un atributo que indica que el campo de entrada no se puede editar</li>
+
+        </ul>
+        <li><strong>Label</strong> Este es el nombre de los campos de entrada, este campo tiene atributos importantes tales como</li>
+        <ul>
+            <li><strong>for:</strong> Este es el nombre del campo de entrada que se relaciona con este label</li>
+        </ul>
+        <li><strong>textarea:</strong> Este es un campo de entrada para escribir varias lineas de texto, este campo tiene atributos importantes tales como</li>
+        <ul>
+            <li><strong>name:</strong> Este es el nombre que identifica el campo de entrada</li>
+            <li><strong>rows:</strong> Este es el numero de filas que se mostraran en el textarea</li>
+            <li><strong>cols:</strong> Este es el numero de columnas que se mostraran en el textarea</li>
+        </ul>
+        <li><strong>select:</strong> Este es un campo de entrada para seleccionar un item de una lista desplegable, este campo tiene atributos importantes tales como</li>
+        <ul>
+            <li><strong>name:</strong> Este es el nombre que identifica el campo de entrada</li>
+            <li><strong>multiple:</strong> Este es un atributo que indica que el campo de entrada puede seleccionar varios items</li>
+            <li><strong>size:</strong> Este es el numero de items que se mostraran en la lista desplegable</li>
+            <li><strong>required:</strong> Este es un atributo que indica que el campo es obligatorio</li>
+        </ul>
+        <li><strong>radio:</strong> Este es un campo de entrada para seleccionar una opcion de una lista de seleccion multiple</li>
+        <li><strong>checkbox:</strong> Este es un campo de entrada para seleccionar opcion multiple</li>
+        <li><strong>submit:</strong> Este es un boton para enviar los datos del formulario</li>
+    </ul>   
+    <hr />
+    <h2>Ejemplo Formulario</h2>
+    <form><!-- Abrimos formulario -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required><br><br>
+        
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required><br><br>
+        
+        <label for="descripcion">Descripcion:</label>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" placeholder="Ingrese su descripcion" required></textarea><br><br>
+        
+        <label for="genero">Genero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Seleccione su genero</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br><br>
+        
+        <label for="hobbies">Hobbies:</label>
+        <input type="radio" id="hobbies" name="hobies">Futbol<br><br>
+        <input type="radio" id="hobbies" name="hobies">natacion<br><br>
+        <input type="radio" id="hobbies" name="hobies">Basquetbol<br><br>
+        <input type="submit" value="enviar formulario"/>
+
+    </form><!-- Cerramos formulario -->
+    
+</body> <!-- Fin del cuerpo de la pagina -->
+
+</html><!-- Cerramos la etiqueta html -->

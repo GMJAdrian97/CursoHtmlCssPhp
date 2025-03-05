@@ -1,0 +1,44 @@
+<h1>Ejercicio nuemero 1</h1>
+<h3>En este ejercicio deberemos realizar los siguiente:</h3>
+<p>Haremos varias paginas en la principal deberemos tener un ecabezado, realizaremnos un menu con una lista donde sus items seran link a las demas paginas, ademas de tener un subtitulo donde pegaremos una imagen que depues la describiremos con parrafo la misma</p>
+<p> En un Item de la lista del menu no llevara a una segunda pagina Donde tendremos el mismo encabezado con el mismo menu, despues un suubtitulo y realizarenmos una tabla de 4 columnas y al menos 3 renglones dode almenos haya texto e imagenes ejemplo de coluna Perro, Reglon imagen de peero</p>
+<p>Por ultimo otra pagina Donde tendremos el mismo encabezado con el mismo menu y aqui llevara un submenu con un formulario con los siguientes campos; nombre, descripcion, un selector y un biton de enviar Nota Todas la paginas deben estar entrelazadas </p>
+<hr />
+<!DOCTYPE HTML> <!-- Establece la version mas reciente de HTML-->
+<html lang="es"> <!-- Abrimos la etiqueta html ya que dentro de esta ira toda nuestra pagina html, Agregamos un atributo 'lang' el cual se usa para definir el lenguaje de la pagiona -->
+    <head> <!-- Inicio de la cabecera de la pagina en la cual se colocaran metadatos, nada d elo que haya qui se mostrara en la pagina -->
+        <title>Ejercicio Numero 1</title> <!-- Agregamos un titulo para identificar la pagina -->
+    </head> <!-- Fin de la cabecera de la pagina -->
+    <body> <!-- Inicio del cuerpo de la pagina -->
+        <!-- Encabezado -->
+        <h1>Bienvenidos a mi primer pagina</h1> 
+
+        <!-- Menu -->
+        <h2>Menu de seleccion</h2> <!-- Agregamos un encabezado de segundo nivel -->
+        <ol>
+            <li><a href="/CursoHtmlCssPhp/basico/7_ejerciocioNumero1/7_EjercicioNumero1Descripcion.html">Descripcion de animal</a></li> <!-- Elemento de la lista con enlace (<a>) -->
+            <li><a href="/CursoHtmlCssPhp/basico/7_ejerciocioNumero1/7_EjercicioNumero1TiposAnimales.html">Tipos de Animales</a></li>  <!-- Elemento de la lista con enlace (<a>) -->
+            <li><a href="/CursoHtmlCssPhp/basico/7_ejerciocioNumero1/7_EjercicioNumero1Contacto.html">Contactanos</a></li>  <!-- Elemento de la lista con enlace (<a>) -->
+        </ol>
+         <!-- Menu -->
+
+        <hr />
+
+        <!-- Contenido del sitio -->
+        <h3>Contactanos</h3> <!-- Encabezado de tipo 3 -->
+        <from> <!-- Inicamos el formulario -->
+            <label for="nombre">Nommbre completo</label> <!-- Iniciamos la etiqueta nombre completo -->
+            <input type="text" name="nombre" required><br> <!-- Generamos su entrada de datos de tipo texto -->
+            <label for="descripcion">Que esperas de nosotros?</label> <!-- Iniciamos la etiqueta nombre de la descrtipcion  -->
+            <imput type="textarea" name="descripcion" required></imput><br><!--  -->
+            <label for="genero">Genero:</label><!-- Iniciamos la etiqueta del genero de las personas  -->
+            <select name="genero"><!-- Genramos el selector -->
+                <option value="masculino">Masculino</option><!-- Primer valor de selector -->
+                <option value="femenino">Femenino</option><!-- segundo valir del selector -->
+                <option value="otro">Otro</option><!-- tercer valoir del selector -->
+            </select><br><!--  -->
+            <input type="submit" value="Enviar">  <!-- Boton de envio -->
+        </from><!-- Cerramos el formulario -->
+    </body> <!-- Fin del cuerpo de la pagina -->
+</html><!-- Cerramos la etiqueta html -->
+

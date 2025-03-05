@@ -1,0 +1,37 @@
+<!DOCTYPE HTML> <!-- Establece la version mas reciente de HTML-->
+<html lang="es">
+<!-- Abrimos la etiqueta html ya que dentro de esta ira toda nuestra pagina html, Agregamos un atributo 'lang' el cual se usa para definir el lenguaje de la pagiona -->
+
+<head>
+    <!-- Inicio de la cabecera de la pagina en la cual se colocaran metadatos, nada d elo que haya qui se mostrara en la pagina -->
+    <title>Mi primera página web</title> <!-- Agregamos un titulo para identificar la pagina -->
+</head> <!-- Fin de la cabecera de la pagina -->
+
+<body> <!-- Inicio del cuerpo de la pagina -->
+    <h1>Imagenes en HTML</h1> <!-- encabezado de primer nivel -->
+
+    <p>Para cragra una imagen utilizaremos la <strong>etiqueta img</strong> <br/> 
+    La etiqueta img tiene diferentes atributos tales como</p>
+    <ul> <!-- Abrimos Lista desordenada -->
+        <li><strong>src:</strong> La ruta de la imagen. Cabe resaltar que existen dos tipos de rutas</li>
+        <ul>
+            <li><strong>Ruta Relativa</strong> Esta ruta es la mas recomendable ya que hacemos referencia a la carpeta donde esta la imagen y esa ruta es dificil que cambie a menos que restructures el proyecto</li><!-- Item de la lista -->
+            <ul>
+                <li><strong>Ejemplo</strong> "/CursoHtmlCssPhp/img/nemo.jpeg" donde espesificamos desde la carpeta raíz del proyecto</li>
+            </ul>
+            <li><strong>Ruta absoluta</strong> la cual no es la mas recomendable ya que si la imagen cambia de ubicacion ejemlo subir a un servidor ya no cargará la imagen ya que no coindie con la primer ruta absoluta capturada </li><!-- Item de la lista -->
+            <ul>
+                <li><strong>Ejemplo</strong> "C:\xampp\htdocs\CursoHtmlCssPhp\img\NombreDeLaImagen.jpg"</li>
+            </ul>
+        </ul> <!-- Cerramos Sublista -->
+        <li><strong>alt:</strong> Un texto alternativo que aparece en caso de que la imagen no pueda ser cargada.</li><!-- Item de la lista -->
+        <li><strong>title:</strong> Un texto que aparece al pasar el mouse sobre la imagen.</li><!-- Item de la lista -->
+        <li><strong>width:</strong> Ancho de la imagen en pixeles.</li><!-- Item de la lista -->
+        <li><strong>height:</strong> Alto de la imagen en pixeles.</li><!-- Item de la lista -->
+    </ul> <!-- Cerramos Lista desordenada -->
+    
+    <h2>Imagen de pez Ocellaris (Nemo)</h2>
+    <img src="/CursoHtmlCssPhp/img/nemo.jpeg" alt="Imagen de un Nemo" title="Foto de un nemo" width="400px" height="250px"/>
+</body> <!-- Fin del cuerpo de la pagina -->
+
+</html><!-- Cerramos la etiqueta html -->
