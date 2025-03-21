@@ -160,4 +160,49 @@ if($pais == "Mexico" || $pais == "España" || $pais == "Colombia"){
     echo "En este pais no se habla español";
 }
 
+echo "<hr /><br />";
+
+////////////////////////////////
+
+//Condional Switches
+$dia = 10;
+
+switch($dia){
+    case 1:
+        echo "Hoy es Lunes";
+        break;
+    case 2:
+        echo "Hoy es Martes";
+        break;
+    case 3:
+        echo "Hoy es Miercoles";
+        break;
+    case 4:
+        echo "Hoy es Jueves";
+        break;
+    case 5:
+        echo "Hoy es Viernes";
+        break;
+    case 6:
+        echo "Hoy es Sabado";
+        break;
+    case 7:
+        echo "Hoy es Domingo";
+        break;
+    default:
+        echo "No existe ese dia de la semana";
+        break;
+}
+
+////////////////////////////////
+echo "<hr /><br />";
+
+goto marca;
+echo "<h3>Seccion 1</h3>";
+echo "<h3>Seccion 2</h3>";
+echo "<h3>Seccion 3</h3>";
+echo "<h3>Seccion 4</h3>";
+
+marca:
+echo "Me saltado 4 echos"
 ?>
