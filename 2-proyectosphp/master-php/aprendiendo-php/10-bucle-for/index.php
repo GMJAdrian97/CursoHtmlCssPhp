@@ -34,4 +34,19 @@ for($multiplicador = 1; $multiplicador <= 10; $multiplicador++){
     echo "$numero x $multiplicador = $resultado <br />";
 }
 
+
+// ejemplo de Break
+
+echo "<hr /><br />";
+
+echo "<h1>If con Break</h1>";
+
+for($multiplicador = 1; $multiplicador <= 10; $multiplicador++){
+    if($numero == 45){
+        echo "No se pueden mostrar las operaciones prohiobidas";
+        break;
+    }
+    echo "$numero x $multiplicador = $resultado <br />";
+}
+
 ?>
